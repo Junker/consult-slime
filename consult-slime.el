@@ -1,7 +1,9 @@
-;;; consult-slime.el --- Consult commands for SLIME
+;;; consult-slime.el --- Consult commands for SLIME -*- lexical-binding: t -*-
 
+;; Author: Dmitry Kosenkov
 ;; Version: 0.1.0
 ;; URL: https://github.com/Junker/consult-slime
+;; Keywords: consult, slime
 ;; Package-Requires: ((consult "1.0") (slime "2.18"))
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -66,3 +68,6 @@
 						   :require-match nil
 						   :history t
 						   :sort nil))))
+
+(provide 'consult-slime)
+;;; consult-slime.el ends here
