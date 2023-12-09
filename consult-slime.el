@@ -3,8 +3,8 @@
 ;; Author: Dmitry Kosenkov
 ;; Version: 0.1.0
 ;; URL: https://github.com/Junker/consult-slime
-;; Keywords: consult, slime
-;; Package-Requires: ((consult "1.0") (slime "2.18"))
+;; Keywords: convenience
+;; Package-Requires: ((emacs "24.1") (consult "1.0") (slime "2.18"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
