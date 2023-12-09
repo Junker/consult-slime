@@ -32,6 +32,7 @@
 (require 'slime-repl)
 
 (defun consult-slime--connection-candidates ()
+  "Connection candidates."
   (let* ((fstring "%s%2s  %-10s  %-17s  %-7s %-s %s")
          (collect (lambda (p)
                     (cons
@@ -52,6 +53,7 @@
     (switch-to-buffer (slime-output-buffer))))
 
 (defun consult-slime-list-connections ()
+  "Yet another `slime-list-connections' with `consult'."
   (interactive)
   (consult-slime-go-to-repl
    (consult--read (consult-slime--connection-candidates)
@@ -61,6 +63,7 @@
 				  :sort nil)))
 
 (defun consult-slime-repl-history ()
+  "Select an input from the SLIME repl's history and insert it."
   (interactive)
   (when slime-repl-input-history
 	(insert (consult--read slime-repl-input-history
